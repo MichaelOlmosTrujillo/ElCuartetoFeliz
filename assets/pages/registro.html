@@ -5,9 +5,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Bootstrap link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <!-- Bootstrap fin del link -->
 
+    <!-- Link de fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <!-- Fin del link de fontawesome -->
     <link rel="stylesheet" href="./../css/registro.css" />
     <title>Registro</title>
 </head>
@@ -38,25 +44,39 @@
             <div></div>
         </div>
         <div class="formulario">
-            <h2 class="mb-5">Registro</h2>
+            <h2 class="mb-5 mt-5">Registro</h2>
             <form class="d-flex justify-content-center flex-column">
                 <div class="form-group">
                     <input type="text" class="form-control" id="nombre" placeholder="Nombre" />
                     <input type="text" class="form-control" id="apellido" placeholder="apellido" />
+                    <input type="text" class="form-control" id="direccion" placeholder="Dirección">
+                </div>
+                <div class="form-group">
                     <input type="email" class="form-control" id="email" placeholder="Email" />
                     <input type="password" class="form-control" id="password" placeholder="Password" />
                 </div>
 
-                <div class="form-group d-flex justify-content-center align-items-center">
-                    <label for="inputState">Sexo</label>
-                    <select id="inputState" class="form-control ml-2">
+                <div class="form-group d-flex justify-content-center align-items-center"width = 90%>
+                    <label for="inputState" class="mx-2">Sexo</label>
+                    <select id="inputState" class="form-control " >
                         <option selected>Escoge...</option>
                         <option>Masculino</option>
                         <option>Femenino</option>
                         <option>Otro</option>
                     </select>
                 </div>
-                <button class="btn btn-warning p-2">Enviar</button>
+                <button class="btn btn-warning mx-auto px-4 mt-3">
+                    Registrar
+                </button>
+                <div>
+                    <h6>También registrarte por:<h6>
+                        <div class="d-flex justify-content-center">
+                        <i class="fab fa-facebook-f mr-3"></i>
+                        <i class="fas fa-envelope ml-3"></i>
+                        </div>
+                <div>
+
+                
             </form>
         </div>
     </main>

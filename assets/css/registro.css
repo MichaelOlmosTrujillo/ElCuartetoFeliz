@@ -55,21 +55,32 @@ h2 {
 .formulario {
     background-color: var(--claro);
     border-radius: 10px;
-    width: 350px;
+    width: 330px;
 }
 
 form {
-    margin: 50px;
-
+    margin: 40px 40px 10px 40px;
 }
 
 input {
     margin: 5px;
+    max-width: 100%;
 }
 
 input:hover {
     border: 5px var(--secundario);
 }
+
+h6 {
+    margin: 30px auto;
+    text-align: center;
+}
+
+div>i:hover {
+    color: var(--primario);
+    cursor: pointer;
+}
+
 
 
 
