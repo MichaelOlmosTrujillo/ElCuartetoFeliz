@@ -1,0 +1,72 @@
+:root {
+    /*Letras*/
+    --claro: #E4DAA3;
+    /* Fondo */
+    --oscuro: #2F2B2A;
+    /* Logo */
+    --primario: #F3CC30;
+    /* Botones */
+    --secundario: #F3CC30;
+}
+
+body {
+    background-color: var(--oscuro);
+}
+
+/* Clases del menú */
+nav {
+    margin-bottom: 70px;
+}
+
+nav>div>a {
+    color: var(--claro);
+}
+
+nav>div>a:hover {
+    color: var(--primario);
+}
+
+nav>div>ul>li>a {
+    color: var(--claro);
+    font-size: 18px;
+}
+
+nav>div>ul>li>a:hover {
+    color: var(--secundario);
+}
+
+/* Final de las clases del final */
+
+/* Inicio de las clases del main */
+.tamanoLogo {
+    font-size: 30px;
+    color: var(--claro);
+}
+
+h2 {
+    margin-top: 20px;
+    color: var(--oscuro);
+    text-align: center;
+}
+
+.formulario {
+    background-color: var(--claro);
+    border-radius: 10px;
+}
+
+form {
+    margin: 50px;
+}
+
+input {
+    margin: 5px;
+}
+
+input:hover {
+    border: 5px var(--secundario);
+}
+
+
+
+
+/* Final de las clases del main */
