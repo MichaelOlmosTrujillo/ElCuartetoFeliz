@@ -38,24 +38,29 @@ nav>div>ul>li>a:hover {
 /* Final de las clases del final */
 
 /* Inicio de las clases del main */
+
 .tamanoLogo {
     font-size: 30px;
     color: var(--claro);
+    text-align: center;
+    margin-top: 20px;
+
 }
 
 h2 {
-    margin-top: 20px;
-    color: var(--oscuro);
+
     text-align: center;
 }
 
 .formulario {
     background-color: var(--claro);
     border-radius: 10px;
+    width: 350px;
 }
 
 form {
     margin: 50px;
+
 }
 
 input {
