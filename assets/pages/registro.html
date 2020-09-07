@@ -32,14 +32,14 @@
                 </li>
                 <li class="nav-item ml-3">
                     <a type="button" class="nav-link" data-toggle="modal" data-target="#exampleModal">
-                        Registro                   
+                        Registro
                     </a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <main class="d-flex justify-content-between flex-wrap ml-5">
+    <main class="d-flex justify-content-between flex-wrap ml-3">
         <div>
             <div>
                 <h2 class="mb-5 tamanoLogo">
@@ -48,13 +48,13 @@
             </div>
             <div></div>
         </div>
-        <div class=" main-registro d-flex justify-content-center align-items-center" >
+        <div class=" main-registro d-flex justify-content-center align-items-center">
             <!-- <img  src="./../images/igor-miske-bsMFZ1957Zg-unsplash.jpg" alt="ImagenRegistro"> -->
-            
-            <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog " role="document">
-                    <div class="modal-content">
+                    <div class="modal-content formulario">
                         <div class="modal-header ">
                             <h5 class="modal-title" id="exampleModalLabel">Registrate</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -62,45 +62,42 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                        <form class="d-flex justify-content-center flex-column">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="nombre" placeholder="Nombre" />
-                                <input type="text" class="form-control" id="apellido" placeholder="apellido" />
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="direccion" placeholder="Dirección">
-                                <input type="email" class="form-control" id="email" placeholder="Email" />
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" id="password" placeholder="Password" />
-                            </div>
-                        
-                            <div class="form-group d-flex justify-content-center align-items-center" width=90%>
-                                <label for="inputState" class="mx-2">Sexo</label>
-                                <select id="inputState" class="form-control ">
-                                    <option selected>Escoge...</option>
-                                    <option>Masculino</option>
-                                    <option>Femenino</option>
-                                    <option>Otro</option>
-                                </select>
-                            </div>
-                            <button class="btn btn-warning mx-auto px-4 mt-3">
-                                Registrar
-                            </button>
-                            <div>
-                                <h6>También registrarte por:<h6>
-                                        <div class="d-flex justify-content-center">
-                                            <i class="fab fa-facebook-f mr-3"></i>
-                                            <i class="fas fa-envelope ml-3"></i>
-                                        </div>
-                                        <div>
-                        
-                        
-                        </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <form class="d-flex justify-content-center flex-column">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" />
+                                    <input type="text" class="form-control" id="apellido" placeholder="apellido" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="direccion" placeholder="Dirección">
+                                    <input type="email" class="form-control" id="email" placeholder="Email" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="password" placeholder="Password" />
+                                </div>
+
+                                <div class="form-group d-flex justify-content-center align-items-center" width=90%>
+                                    <label for="inputState" class="mx-2">Sexo</label>
+                                    <select id="inputState" class="form-control "
+                                        style="background-color:var(--inputBackColor);">
+                                        <option selected>Escoge...</option>
+                                        <option>Masculino</option>
+                                        <option>Femenino</option>
+                                        <option>Otro</option>
+                                    </select>
+                                </div>
+                                <button class="btn btn-warning mx-auto px-4 mt-3">
+                                    Registrar
+                                </button>
+                                <div>
+                                    <h6>También registrarte por:<h6>
+                                            <div class="d-flex justify-content-center">
+                                                <i class="fab fa-facebook-f mr-3"></i>
+                                                <i class="fas fa-envelope ml-3"></i>
+                                            </div>
+                                            <div>
+
+
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -119,6 +116,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
+
+    <!-- Estilos de registro js -->
+    <script src="./../js/registro.js"></script>
 </body>
 
 </html>
