@@ -3,6 +3,8 @@
     --claro: #D1D1B4;
     /*Color Registro transparente - tomado del claro*/
     --transparente: #d1d1b477;
+    /* Transparencia de los inputs*/
+    --inputBackColor: #d1d1b4c4;
     /* Fondo */
     --oscuro: #76BD1D;
     /* Logo */
@@ -51,7 +53,10 @@ nav>div>ul>li>a:hover {
 
 /* Final de las clases del menú */
 
-/* Inicio de las clases del main */
+/* Modificación de una clase de bootstrap - clase "fade" de bootstrap*/
+.fade {
+    transition: all 0.5s ease-in;
+}
 
 .tamanoLogo {
     font-size: 30px;
@@ -76,21 +81,14 @@ h2 {
     height: 100vh;
 }
 
-.formulario {
-    background-color: var(--transparente);
-    border-radius: 10px;
-    width: 80%;
-    margin: 50px 0px;
-}
 
-form {
-    margin: 10px 40px 10px 40px;
-}
+
+
 
 input {
     margin: 5px;
     max-width: 100%;
-    background-color: var(--transparente) !important;
+    background-color: var(--inputBackColor) !important;
 }
 
 input:hover {
@@ -107,7 +105,48 @@ div>i:hover {
     cursor: pointer;
 }
 
-/* @media min */
+@media only screen and (min-width: 900px) {
+    .formulario {
+        background-color: var(--transparente);
+        border-radius: 10px;
+        width: 80%;
+        margin: 50px 0px;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .main-registro {
+        width: 80%;
+
+    }
+
+    .form {
+        margin: 10px 40px 10px 40px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .main-registro {
+        border-radius: 10px 10px 10px 10px !important;
+        width: 95%;
+
+    }
+
+    /* .form {
+        margin: 10px;
+    }
+
+    .margin-Formulario {
+        margin: 20px 10px;
+    } */
+    .formulario {
+        background-color: var(--transparente);
+        border-radius: 10px;
+        width: 95%;
+        margin: 20px 0px;
+        padding-right: 0px !important;
+    }
+}
 
 
 
