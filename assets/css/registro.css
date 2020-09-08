@@ -20,18 +20,18 @@
 
 }
 
-img {
-    max-width: 100%;
-}
+
 
 body {
     background-color: var(--oscuro);
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+
 }
 
 /* Clases del menú */
-nav {
-    margin-bottom: 70px;
-}
+
 
 nav>div>a {
     color: var(--claro);
@@ -58,14 +58,6 @@ nav>div>ul>li>a:hover {
     transition: all 0.5s ease-in;
 }
 
-.tamanoLogo {
-    font-size: 30px;
-    color: var(--claro);
-    text-align: center;
-    margin-top: 20px;
-
-}
-
 h2 {
 
     text-align: center;
@@ -78,7 +70,7 @@ h2 {
     background-size: cover;
     background-position: center;
     border-radius: 50% 0px 0px 0px;
-    height: 100vh;
+    height: 69.5vh;
 }
 
 
@@ -126,11 +118,36 @@ div>i:hover {
 }
 
 @media only screen and (max-width: 550px) {
-    .main-registro {
-        border-radius: 10px 10px 10px 10px !important;
-        width: 95%;
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    main {
+        display: flex;
+        justify-content: space-center;
+        /* align-items: stretch; */
+        /* max-width: 100%; */
+
 
     }
+
+    span {
+        width: 20%;
+    }
+
+    span>img {
+        width: 100%;
+    }
+
+    .main-registro {
+        border-radius: 50% 0px 10px 10px !important;
+        width: 80%;
+        max-width: 100%;
+    }
+
+
 
     /* .form {
         margin: 10px;
@@ -146,6 +163,7 @@ div>i:hover {
         margin: 20px 0px;
         padding-right: 0px !important;
     }
+
 }
 
 
