@@ -1,0 +1,33 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+/* .miheader {
+    height: 300px;
+    background-color: #76bd1d;
+    padding: 60px;
+    padding-right: 250px;
+} */
+
+.parent {
+    background-color: #D1D1B4;
+}
+
+.clients {
+    background-color: #17142645;
+    border-radius: 15px;
+    padding: 20px;
+    height: 150px;
+}
+
+.incontainer {
+    height: 80px;
+}
+.t_espera {
+    color: #F23030;
+    font-size: large;
+    font-weight: bold;
+}
