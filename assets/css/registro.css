@@ -1,3 +1,4 @@
+
 :root {
     /*Letras*/
     --claro: #D1D1B4;
@@ -171,6 +172,176 @@ div>i:hover {
 
 }
 
+
+
+=======
+:root {
+    /*Letras*/
+    --claro: #D1D1B4;
+    /*Color Registro transparente - tomado del claro*/
+    --transparente: #d1d1b477;
+    /* Transparencia de los inputs*/
+    --inputBackColor: #d1d1b4c4;
+    /* Fondo */
+    --oscuro: #76BD1D;
+    /* Logo */
+    --primario: #F3CC30;
+    /* Botones */
+    --secundario: #F3CC30;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+    background-color: var(--oscuro);
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+/* Clases del menú */
+
+
+nav>div>a {
+    color: var(--claro);
+    cursor: pointer;
+}
+
+nav>div>a:hover {
+    color: var(--primario);
+}
+
+nav>div>ul>li>a {
+    color: var(--claro);
+    font-size: 18px;
+}
+
+nav>div>ul>li>a:hover {
+    color: var(--secundario);
+}
+
+/* Final de las clases del menú */
+
+/* Modificación de una clase de bootstrap - clase "fade" de bootstrap*/
+.fade {
+    transition: all 0.5s ease-in;
+}
+
+h2 {
+
+    text-align: center;
+}
+
+.main-registro {
+    width: 75%;
+    background-image: url('./../images/igor-miske-bsMFZ1957Zg-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50% 0px 0px 0px;
+    height: 69.5vh;
+}
+
+
+
+
+
+input {
+    margin: 5px;
+    max-width: 100%;
+    background-color: var(--inputBackColor) !important;
+}
+
+input:hover {
+    border: 5px var(--secundario);
+}
+
+h6 {
+    margin: 30px auto;
+    text-align: center;
+}
+
+div>i:hover {
+    color: var(--primario);
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 900px) {
+    .formulario {
+        background-color: var(--transparente);
+        border-radius: 10px;
+        width: 80%;
+        margin: 50px 0px;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .main-registro {
+        width: 80%;
+
+    }
+
+    .form {
+        margin: 10px 40px 10px 40px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    main {
+        display: flex;
+        justify-content: space-center;
+        /* align-items: stretch; */
+        /* max-width: 100%; */
+
+
+    }
+
+    span {
+        width: 20%;
+    }
+
+    span>img {
+        width: 100%;
+    }
+
+    .main-registro {
+        border-radius: 50% 0px 10px 10px !important;
+        width: 80%;
+        max-width: 100%;
+    }
+
+
+
+    /* .form {
+        margin: 10px;
+    }
+
+    .margin-Formulario {
+        margin: 20px 10px;
+    } */
+    .formulario {
+        background-color: var(--transparente);
+        border-radius: 10px;
+        width: 95%;
+        margin: 20px 0px;
+        padding-right: 0px !important;
+    }
+
+}
 
 
 /* Final de las clases del main */
