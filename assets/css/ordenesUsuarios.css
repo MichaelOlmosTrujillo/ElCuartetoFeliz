@@ -37,11 +37,13 @@
 .grid-layout {
     display: grid;
     grid-template-columns: 1fr 4fr;
+
     grid-template-areas:
         'rest logoIpref'
-        'hr-linea hr-linea'
         'menuLateral contenidoLateral'
     ;
+
+    height: 100vh;
 
 }
 
@@ -53,7 +55,7 @@
     text-align: center;
     padding: 20px;
     font-size: 25px;
-
+    border-bottom: solid 1px var(--claro);
 }
 
 .grid-logoIpref {
@@ -62,24 +64,26 @@
     display: flex;
     justify-content: space-between;
     padding: 10px;
-}
+    border-bottom: solid 1px var(--claro);
 
-.grid-hr-linea {
-    grid-area: hr-linea;
-    color: var(--claro);
 
 }
+
+
 
 .grid-menuLateral {
     grid-area: menuLateral;
     background-color: var(--fondoNegro);
     color: var(--claro);
     text-align: center;
+
 }
+
 
 aside ul {
     position: sticky;
     top: 0px;
+    margin: 5px auto;
 }
 
 ul>li {
@@ -106,7 +110,7 @@ ul>li>a {
     justify-items: center;
     align-items: center;
     /* border: solid; */
-    padding: 30px;
+    padding: 10px;
 }
 
 .pedido {
@@ -123,7 +127,6 @@ ul>li>a {
         grid-template-columns: 1fr 2fr;
         grid-template-areas:
             'rest logoIpref'
-            'hr-linea hr-linea'
             'menuLateral menuLateral'
             'contenidoLateral contenidoLateral'
         ;
