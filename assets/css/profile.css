@@ -186,12 +186,12 @@ main form input[type='file']{
 }
 
 @media(max-width:576px){
+
     header .logo{width: 50px; }
   header .cont-logo,.cont-texto{height: 80px;}
   header .cont-texto> p{
-    position: relative;
-    bottom: 10px;
-}
+
+    header .logo{margin-top: 30px;}
     main{padding: 20px;}
     main form input{
         padding:3px 6px;
@@ -245,4 +245,6 @@ main form input[type='file']{
       
     }
 
-}
+     
+
+
