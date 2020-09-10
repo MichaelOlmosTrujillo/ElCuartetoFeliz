@@ -5,8 +5,8 @@ Nombre de Grupo: El Cuarteto Feliz
 integrantes:
 Michael Olmos (Equipo de desarrollo)
 javier gutierrez (Scrum Master)
-Diego Martínez(Product Owner)
-Raul Figueroa (Tech Lead)
+Camilo Sanchez (Tech Lead)
+Raul Figueroa (Product Owner)
 
 Aplicativo web basado en los gustos del usuario para que los comercios den una atencion personalizada y enfocada a cada cliente.
 
