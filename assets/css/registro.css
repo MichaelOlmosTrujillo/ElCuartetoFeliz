@@ -157,6 +157,7 @@ div > i:hover {
 }
 
 :root {
+
   /*Letras*/
   --claro: #ffffff;
   /*Color Registro transparente - tomado del claro*/
@@ -185,21 +186,24 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
+
 
 /* Clases del menú */
+
 
 nav > div > a {
   color: var(--claro);
   cursor: pointer;
-}
+
 
 nav > div > a:hover {
   color: var(--primario);
 }
 
+
 nav > div > ul > li > a {
   color: var(--claro);
+
 }
 
 nav > div > ul > li > a:hover {
@@ -209,10 +213,12 @@ nav > div > ul > li > a:hover {
 /* Final de las clases del menú */
 /* Clases del aside */
 
+
 .iniciarSesion {
   width: 200px;
   margin-right: 20px;
 }
+
 
 /* Final de las clases del aside */
 /* Modificación de una clase de bootstrap - clase "fade" de bootstrap*/
@@ -221,6 +227,7 @@ nav > div > ul > li > a:hover {
 }
 
 h2 {
+
   text-align: center;
 }
 
@@ -231,6 +238,7 @@ h2 {
   background-size: cover;
   background-position: center;
   border-radius: 50% 0px 0px 0px;
+
 }
 
 input {
@@ -254,6 +262,7 @@ div > i:hover {
 }
 
 div .modal-dialog {
+
   width: 95%;
   max-width: 350px;
 }
@@ -354,6 +363,7 @@ div .modal-dialog {
 
     /* position: fixed; */
   }
+
 
   /* .form {
         margin: 10px;
