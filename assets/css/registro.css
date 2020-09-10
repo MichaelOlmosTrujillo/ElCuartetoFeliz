@@ -177,38 +177,36 @@ div>i:hover {
 =======
 :root {
     /*Letras*/
-    --claro: #D1D1B4;
+    --claro: #ffffff;
     /*Color Registro transparente - tomado del claro*/
-    --transparente: #d1d1b477;
+    --transparente: #d1d1b49a;
     /* Transparencia de los inputs*/
     --inputBackColor: #d1d1b4c4;
     /* Fondo */
-    --oscuro: #76BD1D;
+    --oscuro: #76bd1d;
     /* Logo */
-    --primario: #F3CC30;
+    --primario: #f3cc30;
     /* Botones */
-    --secundario: #F3CC30;
+    --secundario: #f3cc30;
 }
 
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-
 }
-
-
 
 body {
     background-color: var(--oscuro);
     margin: 0px;
     width: 100vw;
     height: 100vh;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* Clases del menú */
-
 
 nav>div>a {
     color: var(--claro);
@@ -221,7 +219,6 @@ nav>div>a:hover {
 
 nav>div>ul>li>a {
     color: var(--claro);
-    font-size: 18px;
 }
 
 nav>div>ul>li>a:hover {
@@ -229,30 +226,32 @@ nav>div>ul>li>a:hover {
 }
 
 /* Final de las clases del menú */
+/* Clases del aside */
 
+
+.iniciarSesion {
+    width: 200px;
+    margin-right: 20px;
+}
+
+/* Final de las clases del aside */
 /* Modificación de una clase de bootstrap - clase "fade" de bootstrap*/
 .fade {
     transition: all 0.5s ease-in;
 }
 
 h2 {
-
     text-align: center;
 }
 
 .main-registro {
     width: 75%;
-    background-image: url('./../images/igor-miske-bsMFZ1957Zg-unsplash.jpg');
+    background-image: url("./../images/igor-miske-bsMFZ1957Zg-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 50% 0px 0px 0px;
-    height: 69.5vh;
 }
-
-
-
-
 
 input {
     margin: 5px;
@@ -274,44 +273,44 @@ div>i:hover {
     cursor: pointer;
 }
 
+div .modal-dialog {
+    width: 95%;
+    max-width: 350px;
+}
+
 @media only screen and (min-width: 900px) {
-    .formulario {
-        background-color: var(--transparente);
-        border-radius: 10px;
-        width: 80%;
-        margin: 50px 0px;
-    }
-}
-
-@media only screen and (max-width:900px) {
-    .main-registro {
-        width: 80%;
-
+    nav>div>ul>li {
+        border: solid 1px var(--claro);
+        padding: 3px 20px;
     }
 
-    .form {
-        margin: 10px 40px 10px 40px;
+    nav>div>ul>li>a {
+        font-size: 20px;
     }
-}
 
-@media only screen and (max-width: 550px) {
-    body {
+    aside {
+
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-end;
     }
 
     main {
         display: flex;
-        justify-content: space-center;
+        justify-content: center;
+        /* align-items: center; */
         /* align-items: stretch; */
         /* max-width: 100%; */
+    }
 
-
+    .formulario {
+        background-color: var(--transparente);
+        border-radius: 10px;
+        width: 100%;
+        margin: 50px 0px;
     }
 
     span {
-        width: 20%;
+        width: 30%;
     }
 
     span>img {
@@ -319,12 +318,64 @@ div>i:hover {
     }
 
     .main-registro {
-        border-radius: 50% 0px 10px 10px !important;
-        width: 80%;
+        border-radius: 50% 0px 0px 0px !important;
+        width: 70%;
         max-width: 100%;
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    nav {
+        margin-top: 30px;
     }
 
+    nav>div>ul>li {
+        border: solid 1px var(--claro);
+        padding: 3px 20px;
+    }
 
+    nav>div>ul>li>a {
+        font-size: 16px;
+    }
+
+    aside {
+
+        display: flex;
+        justify-content: center;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        /* align-items: stretch; */
+        /* max-width: 100%; */
+    }
+
+    span {
+        width: 30%;
+    }
+
+    span>img {
+        width: 100%;
+    }
+
+    .main-registro {
+        border-radius: 50% 0px 0px 0px !important;
+        width: 70%;
+        max-width: 100%;
+        height: 50vh;
+    }
+
+    .formulario {
+        background-color: var(--transparente);
+        border-radius: 10px;
+        width: 100%;
+        margin: 20px 0px;
+        padding-right: 0px;
+
+        /* position: fixed; */
+    }
 
     /* .form {
         margin: 10px;
@@ -333,14 +384,6 @@ div>i:hover {
     .margin-Formulario {
         margin: 20px 10px;
     } */
-    .formulario {
-        background-color: var(--transparente);
-        border-radius: 10px;
-        width: 95%;
-        margin: 20px 0px;
-        padding-right: 0px !important;
-    }
-
 }
 
 
