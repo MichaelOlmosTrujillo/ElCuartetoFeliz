@@ -126,6 +126,10 @@ ul>li>a {
     border-radius: 10px;
     color: var(--claro);
     position: relative;
+    -webkit-box-shadow: 10px 10px 28px -1pxx rgba(0, 0, 0, 0.623);
+    -moz-box-shadow: 10px 10px 28px -1px rgba(0, 0, 0, 0.623);
+    box-shadow: 10px 10px 28px -1px rgba(0, 0, 0, 0.623);
+
 }
 
 .alergias {
@@ -135,17 +139,29 @@ ul>li>a {
     border-radius: 10px;
     font-size: 18px;
     margin-top: 20px;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 10px 10px 28px -1pxx rgba(0, 0, 0, 0.623);
+    -moz-box-shadow: 10px 10px 28px -1px rgba(0, 0, 0, 0.623);
+    box-shadow: 10px 10px 28px -1px rgba(0, 0, 0, 0.623);
+
 }
 
 .usuarioAlergias {
     display: flex;
     justify-content: space-around;
+
 }
 
 .usuario {
     padding: 10px 20px;
     margin-top: 20px;
     text-align: end;
+    -webkit-text-shadow: 10px 10px 28px -1pxx rgba(0, 0, 0, 0.623);
+    -moz-text-shadow: 10px 10px 28px -1px rgba(0, 0, 0, 0.623);
+    text-shadow: 5px 5px 8px #000000a6;
+}
+
+
 
 
 @media only screen and (max-width:550px) {
@@ -214,6 +230,6 @@ ul>li>a {
 .logoCrepes {
     background-color: var(--claro);
     border-radius: 200px;
-    width: 80px;
+    width: 60px;
 
 }
