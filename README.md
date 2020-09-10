@@ -1,4 +1,5 @@
-Iomza 🍕🍣🍗🥞🍭
+
+iPref 🍕🍣🍗🥞🍭
 
 Nombre de Grupo: El Cuarteto Feliz
 
@@ -14,4 +15,5 @@ Paso a paso.
 1. Definicion roles del grupo
 2. Aclarar idea del proyecto
 3. Creacion MockUp
+
 
